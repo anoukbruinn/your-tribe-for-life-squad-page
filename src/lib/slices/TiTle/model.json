@@ -1,0 +1,26 @@
+{
+  "id": "ti_tle",
+  "type": "SharedSlice",
+  "name": "TiTle",
+  "description": "TiTle",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "intro": {
+          "type": "Text",
+          "config": {
+            "label": "intro",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

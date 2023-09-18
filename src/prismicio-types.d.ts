@@ -76,14 +76,54 @@ export type AllDocumentTypes = PageDocument;
  */
 export interface TiTleSliceDefaultPrimary {
 	/**
-	 * intro field in *TiTle → Primary*
+	 * FDND field in *TiTle → Primary*
 	 *
 	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: ti_tle.primary.intro
+	 * - **API ID Path**: ti_tle.primary.fdnd
 	 * - **Documentation**: https://prismic.io/docs/field#key-text
 	 */
-	intro: prismic.KeyTextField;
+	fdnd: prismic.KeyTextField;
+
+	/**
+	 * Frontender field in *TiTle → Primary*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: ti_tle.primary.frontender
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	frontender: prismic.RichTextField;
+
+	/**
+	 * profilepicture field in *TiTle → Primary*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: ti_tle.primary.profilepicture
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	profilepicture: prismic.ImageField<never>;
+
+	/**
+	 * name field in *TiTle → Primary*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: ti_tle.primary.name
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	name: prismic.KeyTextField;
+
+	/**
+	 * about field in *TiTle → Primary*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: ti_tle.primary.about
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	about: prismic.RichTextField;
 }
 
 /**

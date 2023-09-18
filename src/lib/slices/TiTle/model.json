@@ -12,11 +12,44 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
-        "intro": {
+        "fdnd": {
           "type": "Text",
           "config": {
-            "label": "intro",
+            "label": "FDND",
             "placeholder": ""
+          }
+        },
+        "frontender": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Frontender",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        },
+        "profilepicture": {
+          "type": "Image",
+          "config": {
+            "label": "profilepicture",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "name": {
+          "type": "Text",
+          "config": {
+            "label": "name",
+            "placeholder": ""
+          }
+        },
+        "about": {
+          "type": "StructuredText",
+          "config": {
+            "label": "about",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
           }
         }
       },

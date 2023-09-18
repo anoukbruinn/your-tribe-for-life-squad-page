@@ -3,60 +3,92 @@
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
 		"primary": {
-			"fdnd": {
+			"Welcome": {
 				"__TYPE__": "FieldContent",
-				"value": "thy",
+				"value": "unhappy",
 				"type": "Text"
-			},
-			"frontender": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Ad culpa ipsum pariatur Lorem officia ex eiusmod. Dolor occaecat commodo ullamco labore nostrud. Pariatur minim eiusmod deserunt enim ex ipsum sit laborum irure reprehenderit laboris fugiat ipsum."
-						}
-					}
-				]
-			},
-			"profilepicture": {
-				"__TYPE__": "ImageContent",
-				"origin": {
-					"id": "main",
-					"url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
-					"width": 4016,
-					"height": 6016
-				},
-				"url": "https://images.unsplash.com/photo-1593642633279-1796119d5482",
-				"width": 4016,
-				"height": 6016,
-				"edit": {
-					"zoom": 1,
-					"crop": {
-						"x": 0,
-						"y": 0
-					},
-					"background": "transparent"
-				},
-				"thumbnails": {}
-			},
-			"name": {
-				"__TYPE__": "FieldContent",
-				"value": "peace",
-				"type": "Text"
-			},
-			"about": {
-				"__TYPE__": "StructuredTextContent",
-				"value": [
-					{
-						"type": "paragraph",
-						"content": {
-							"text": "Velit excepteur occaecat fugiat fugiat anim ullamco incididunt. Consequat laborum ipsum dolor aute nisi quis in excepteur magna quis laborum veniam. Eiusmod eu officia cupidatat eiusmod proident magna irure aliqua ullamco."
-						}
-					}
-				]
 			}
 		},
-		"items": []
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"fdnd",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "look",
+							"type": "Text"
+						}
+					],
+					[
+						"frontender",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "bit",
+							"type": "Text"
+						}
+					],
+					[
+						"profilepicture",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a",
+								"width": 3456,
+								"height": 4320
+							},
+							"url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a",
+							"width": 3456,
+							"height": 4320,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "tongue",
+							"type": "Text"
+						}
+					],
+					[
+						"about",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "prize",
+							"type": "Text"
+						}
+					],
+					[
+						"text_color",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#26900c",
+							"type": "Color"
+						}
+					],
+					[
+						"background_color",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#90b830",
+							"type": "Color"
+						}
+					]
+				]
+			}
+		]
 	}
 ]

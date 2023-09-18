@@ -12,6 +12,15 @@
       "description": "Default",
       "imageUrl": "",
       "primary": {
+        "Welcome": {
+          "type": "Text",
+          "config": {
+            "label": "Welcome",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
         "fdnd": {
           "type": "Text",
           "config": {
@@ -20,12 +29,10 @@
           }
         },
         "frontender": {
-          "type": "StructuredText",
+          "type": "Text",
           "config": {
             "label": "Frontender",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "placeholder": ""
           }
         },
         "profilepicture": {
@@ -39,21 +46,32 @@
         "name": {
           "type": "Text",
           "config": {
-            "label": "name",
+            "label": "Name",
             "placeholder": ""
           }
         },
         "about": {
-          "type": "StructuredText",
+          "type": "Text",
           "config": {
-            "label": "about",
-            "placeholder": "",
-            "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "label": "About",
+            "placeholder": ""
+          }
+        },
+        "text_color": {
+          "type": "Color",
+          "config": {
+            "label": "text color",
+            "placeholder": ""
+          }
+        },
+        "background_color": {
+          "type": "Color",
+          "config": {
+            "label": "background color",
+            "placeholder": ""
           }
         }
-      },
-      "items": {}
+      }
     }
   ]
 }

@@ -11,6 +11,17 @@ type PageDocumentDataSlicesSlice = TiTleSlice;
  */
 interface PageDocumentData {
 	/**
+	 * welcome field in *page*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: page.welcome
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	welcome: prismic.KeyTextField;
+
+	/**
 	 * Slice Zone field in *page*
 	 *
 	 * - **Field Type**: Slice Zone
@@ -76,54 +87,89 @@ export type AllDocumentTypes = PageDocument;
  */
 export interface TiTleSliceDefaultPrimary {
 	/**
-	 * FDND field in *TiTle → Primary*
+	 * Welcome field in *TiTle → Primary*
 	 *
 	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: ti_tle.primary.fdnd
+	 * - **API ID Path**: ti_tle.primary.Welcome
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	Welcome: prismic.KeyTextField;
+}
+
+/**
+ * Primary content in *TiTle → Items*
+ */
+export interface TiTleSliceDefaultItem {
+	/**
+	 * FDND field in *TiTle → Items*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: ti_tle.items[].fdnd
 	 * - **Documentation**: https://prismic.io/docs/field#key-text
 	 */
 	fdnd: prismic.KeyTextField;
 
 	/**
-	 * Frontender field in *TiTle → Primary*
+	 * Frontender field in *TiTle → Items*
 	 *
-	 * - **Field Type**: Rich Text
+	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: ti_tle.primary.frontender
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **API ID Path**: ti_tle.items[].frontender
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
 	 */
-	frontender: prismic.RichTextField;
+	frontender: prismic.KeyTextField;
 
 	/**
-	 * profilepicture field in *TiTle → Primary*
+	 * profilepicture field in *TiTle → Items*
 	 *
 	 * - **Field Type**: Image
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: ti_tle.primary.profilepicture
+	 * - **API ID Path**: ti_tle.items[].profilepicture
 	 * - **Documentation**: https://prismic.io/docs/field#image
 	 */
 	profilepicture: prismic.ImageField<never>;
 
 	/**
-	 * name field in *TiTle → Primary*
+	 * Name field in *TiTle → Items*
 	 *
 	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: ti_tle.primary.name
+	 * - **API ID Path**: ti_tle.items[].name
 	 * - **Documentation**: https://prismic.io/docs/field#key-text
 	 */
 	name: prismic.KeyTextField;
 
 	/**
-	 * about field in *TiTle → Primary*
+	 * About field in *TiTle → Items*
 	 *
-	 * - **Field Type**: Rich Text
+	 * - **Field Type**: Text
 	 * - **Placeholder**: *None*
-	 * - **API ID Path**: ti_tle.primary.about
-	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 * - **API ID Path**: ti_tle.items[].about
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
 	 */
-	about: prismic.RichTextField;
+	about: prismic.KeyTextField;
+
+	/**
+	 * text color field in *TiTle → Items*
+	 *
+	 * - **Field Type**: Color
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: ti_tle.items[].text_color
+	 * - **Documentation**: https://prismic.io/docs/field#color
+	 */
+	text_color: prismic.ColorField;
+
+	/**
+	 * background color field in *TiTle → Items*
+	 *
+	 * - **Field Type**: Color
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: ti_tle.items[].background_color
+	 * - **Documentation**: https://prismic.io/docs/field#color
+	 */
+	background_color: prismic.ColorField;
 }
 
 /**
@@ -136,7 +182,7 @@ export interface TiTleSliceDefaultPrimary {
 export type TiTleSliceDefault = prismic.SharedSliceVariation<
 	'default',
 	Simplify<TiTleSliceDefaultPrimary>,
-	never
+	Simplify<TiTleSliceDefaultItem>
 >;
 
 /**
@@ -169,6 +215,7 @@ declare module '@prismicio/client' {
 			AllDocumentTypes,
 			TiTleSlice,
 			TiTleSliceDefaultPrimary,
+			TiTleSliceDefaultItem,
 			TiTleSliceVariation,
 			TiTleSliceDefault
 		};

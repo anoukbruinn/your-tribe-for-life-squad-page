@@ -12,6 +12,13 @@
 				},
 				"type": "UID"
 			},
+			"welcome": {
+				"type": "Text",
+				"config": {
+					"label": "welcome",
+					"placeholder": ""
+				}
+			},
 			"slices": {
 				"type": "Slices",
 				"fieldset": "Slice Zone",

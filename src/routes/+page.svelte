@@ -7,9 +7,11 @@
 	console.log(data);
 </script>
 
-<!-- <pre>
+<pre>
        {JSON.stringify(data, null, 2)}
 
-</pre> -->
+</pre>
 
 <SliceZone slices={data.slices} {components} />
+
+<!-- <h1>{data.welcome}</h1> -->

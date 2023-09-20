@@ -1,0 +1,94 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"Welcome": {
+				"__TYPE__": "FieldContent",
+				"value": "unhappy",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"fdnd",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "look",
+							"type": "Text"
+						}
+					],
+					[
+						"frontender",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "bit",
+							"type": "Text"
+						}
+					],
+					[
+						"profilepicture",
+						{
+							"origin": {
+								"id": "main",
+								"url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a",
+								"width": 3456,
+								"height": 4320
+							},
+							"url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a",
+							"width": 3456,
+							"height": 4320,
+							"edit": {
+								"zoom": 1,
+								"crop": {
+									"x": 0,
+									"y": 0
+								},
+								"background": "transparent"
+							},
+							"credits": null,
+							"alt": null,
+							"__TYPE__": "ImageContent",
+							"thumbnails": {}
+						}
+					],
+					[
+						"name",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "tongue",
+							"type": "Text"
+						}
+					],
+					[
+						"about",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "prize",
+							"type": "Text"
+						}
+					],
+					[
+						"text_color",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#26900c",
+							"type": "Color"
+						}
+					],
+					[
+						"background_color",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "#90b830",
+							"type": "Color"
+						}
+					]
+				]
+			}
+		]
+	}
+]

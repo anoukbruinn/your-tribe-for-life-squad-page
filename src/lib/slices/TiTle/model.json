@@ -1,0 +1,77 @@
+{
+  "id": "ti_tle",
+  "type": "SharedSlice",
+  "name": "TiTle",
+  "description": "TiTle",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "Welcome": {
+          "type": "Text",
+          "config": {
+            "label": "Welcome",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {
+        "fdnd": {
+          "type": "Text",
+          "config": {
+            "label": "FDND",
+            "placeholder": ""
+          }
+        },
+        "frontender": {
+          "type": "Text",
+          "config": {
+            "label": "Frontender",
+            "placeholder": ""
+          }
+        },
+        "profilepicture": {
+          "type": "Image",
+          "config": {
+            "label": "profilepicture",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "name": {
+          "type": "Text",
+          "config": {
+            "label": "Name",
+            "placeholder": ""
+          }
+        },
+        "about": {
+          "type": "Text",
+          "config": {
+            "label": "About",
+            "placeholder": ""
+          }
+        },
+        "text_color": {
+          "type": "Color",
+          "config": {
+            "label": "text color",
+            "placeholder": ""
+          }
+        },
+        "background_color": {
+          "type": "Color",
+          "config": {
+            "label": "background color",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

@@ -66,10 +66,8 @@
 		font-size: 180px;
 	}
 
-
-
 	/*MEDIA QUERIES*/
-	
+
 	/*desktop*/
 
 	@media only screen and (min-width: 560px) {

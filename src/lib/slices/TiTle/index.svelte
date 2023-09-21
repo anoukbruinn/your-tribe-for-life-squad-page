@@ -79,12 +79,11 @@
 	.welcome {
 		color: white;
 		font-size: 150px;
-		/* margin-left: 2em;
-		margin-right: -7em; */
+		
 	}
 
 	.cards {
-		padding: 13rem;
+		
 		width: 500px;
 		height: 20vw;
 		font-size: 60px;
@@ -95,22 +94,6 @@
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
 	}
-
-	/* .cards0 {
-		grid-area: 2 / 2 / 3 / 3;
-	}
-
-	.cards6 {
-		grid-area: 3 / 1 / 4 / 2;
-	}
-
-	.cards11 {
-		grid-area: 4 / 3 / 5 / 4;
-	}
-
-	.cards16 {
-		grid-area: 3 / 4 / 4 / 5;
-	} */
 
 	.profile-picture {
 		margin-left: 10em;
@@ -128,21 +111,10 @@
 	/*desktop*/
 
 	@media only screen and (min-width: 560px) {
-		.welcome {
-			font-size: 110px;
-			margin-left: 2em;
-			margin-right: -7em;
+	.welcome {
+		font-size: 110px;
+		width: 400px;
 		}
-
-		/* .cards {
-			width: 55vw;
-			height: 65vw;
-			font-size: 13px;
-			/* display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			grid-template-rows: repeat(4, 1fr);
-			grid-column-gap: 0px;
-			grid-row-gap: 0px; */
 	}
 
 	.cards {
@@ -150,21 +122,6 @@
 		width: 30vw;
 		height: 20vw;
 		font-size: 60px;
-
-		/* display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(4, 1fr);
-		grid-column-gap: 0px;
-		grid-row-gap: 0px; */
-
-		/* .cards0 { grid-area: 2 / 2 / 3 / 3; }
-
-		.cards6 { grid-area: 3 / 1 / 4 / 2; }
-
-		.cards11 { grid-area: 4 / 3 / 5 / 4; }
-
-		.cards16 { grid-area: 3 / 4 / 4 / 5;} */
-
 		display: grid;
 
 		grid-template-columns: repeat(4, 1fr);
@@ -174,33 +131,22 @@
 		grid-column-gap: 0px;
 
 		grid-row-gap: 0px;
+		margin-left: -2.8em;
 	}
 	.cards0 {
-		margin-top: 90px;
+		margin-top: -3em;
+		margin-right: 3em;
 	}
 
 	.cards1 {
-		margin-top: -10px;
+		margin-top: -10em;
+		margin-right: 3em;
 	}
 
 	.cards2 {
-		margin-top: 250px;
-	}
-	/* .cards0 {
-		grid-area: 2 / 1 / 7 / 2;
+		margin-top: -7em;
 	}
 
-	.cards6 {
-		grid-area: 1 / 2 / 7 / 3;
-	}
-
-	.cards11 {
-		grid-area: 2 / 3 / 7 / 2;
-	}
-
-	.cards16 {
-		grid-area: 1 / 4 / 7 / 3;
-	} */
 
 	.profile-picture {
 		margin-left: 2.5em;
@@ -220,7 +166,7 @@
 
 	.card-item {
 		margin-bottom: 3em;
-		margin-right: 3em;
+		
 	}
 
 	.inner-card {
@@ -232,19 +178,5 @@
 		font-size: 24px;
 	}
 
-	/* @media all and (min-width: 700px) {
-			.cards {
-				--rows: 3;
-			}
-		}
-		@media all and (min-width: 1000px) {
-			.cards {
-				--rows: 4;
-			}
-		}
-		@media all and (min-width: 1200px) {
-			.cards {
-				--rows: 4;
-			}
-		} */
+
 </style>

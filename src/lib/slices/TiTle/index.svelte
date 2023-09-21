@@ -12,7 +12,7 @@
 
 	<section class="cards">
 		<div class="cards0">
-			{#each slice.items.slice(0, 5) as item}
+			{#each slice.items.slice(0, 6) as item}
 				<div
 					class="card-item"
 					style="background-color: {item.background_color
@@ -30,8 +30,8 @@
 			{/each}
 		</div>
 
-		<div class="cards6">
-			{#each slice.items.slice(6, 10) as item}
+		<div class="cards1">
+			{#each slice.items.slice(7, 13) as item}
 				<div
 					class="card-item"
 					style="background-color: {item.background_color
@@ -49,27 +49,8 @@
 			{/each}
 		</div>
 
-		<div class="cards11">
-			{#each slice.items.slice(11, 15) as item}
-				<div
-					class="card-item"
-					style="background-color: {item.background_color
-						? item.background_color
-						: '#fff'}; color: {item.text_color ? item.text_color : '#000'}"
-				>
-					<div class="inner-card">
-						<h2>{item.fdnd}</h2>
-						<h2>{item.frontender}</h2>
-						<img class="profile-picture" src={item.profilepicture.url} alt="profilepicture" />
-						<h1 class="naam">{item.name}</h1>
-						<p>{item.about}</p>
-					</div>
-				</div>
-			{/each}
-		</div>
-
-		<div class="cards16">
-			{#each slice.items.slice(16, 20) as item}
+		<div class="cards2">
+			{#each slice.items.slice(14, 20) as item}
 				<div
 					class="card-item"
 					style="background-color: {item.background_color
@@ -98,37 +79,38 @@
 	.welcome {
 		color: white;
 		font-size: 150px;
-		margin-left: 2em;
-		margin-right: -7em;
+		/* margin-left: 2em;
+		margin-right: -7em; */
 	}
 
 	.cards {
 		padding: 13rem;
-		width: 300vw;
+		width: 500px;
 		height: 20vw;
 		font-size: 60px;
-		/* display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(4, 1fr);
-		grid-column-gap: 0px;
-		grid-row-gap: 0px; */
-	
+
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(4, 1fr);
+		grid-template-columns: repeat(3);
+		grid-template-rows: repeat(3);
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
-
 	}
 
-		.cards0 { grid-area: 2 / 2 / 3 / 3; }
+	/* .cards0 {
+		grid-area: 2 / 2 / 3 / 3;
+	}
 
-		.cards6 { grid-area: 3 / 1 / 4 / 2; }
+	.cards6 {
+		grid-area: 3 / 1 / 4 / 2;
+	}
 
-		.cards11 { grid-area: 4 / 3 / 5 / 4; }
+	.cards11 {
+		grid-area: 4 / 3 / 5 / 4;
+	}
 
-		.cards16 { grid-area: 3 / 4 / 4 / 5;}
-
+	.cards16 {
+		grid-area: 3 / 4 / 4 / 5;
+	} */
 
 	.profile-picture {
 		margin-left: 10em;
@@ -161,54 +143,96 @@
 			grid-template-rows: repeat(4, 1fr);
 			grid-column-gap: 0px;
 			grid-row-gap: 0px; */
-		} 
-
+	}
 
 	.cards {
 		padding: 13rem;
-		width: 300vw;
+		width: 30vw;
 		height: 20vw;
 		font-size: 60px;
+
 		/* display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(4, 1fr);
 		grid-column-gap: 0px;
 		grid-row-gap: 0px; */
-	
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: repeat(4, 1fr);
-		grid-column-gap: 0px;
-		grid-row-gap: 0px;
 
-	}
-
-		.cards0 { grid-area: 2 / 2 / 3 / 3; }
+		/* .cards0 { grid-area: 2 / 2 / 3 / 3; }
 
 		.cards6 { grid-area: 3 / 1 / 4 / 2; }
 
 		.cards11 { grid-area: 4 / 3 / 5 / 4; }
 
-		.cards16 { grid-area: 3 / 4 / 4 / 5;}
+		.cards16 { grid-area: 3 / 4 / 4 / 5;} */
 
+		display: grid;
 
-		.profile-picture {
-			margin-left: 10em;
-			width: 12em;
-		}
+		grid-template-columns: repeat(4, 1fr);
 
-		.naam {
-			margin-top: -1em;
-			margin-left: 10px;
-			font-size: 40px;
-		}
+		grid-template-rows: repeat(6, 1fr);
 
-		.card-item {
-			margin-bottom: 3em;
-			margin-right: 3em;
-		}
+		grid-column-gap: 0px;
 
-		/* @media all and (min-width: 700px) {
+		grid-row-gap: 0px;
+	}
+	.cards0 {
+		margin-top: 90px;
+	}
+
+	.cards1 {
+		margin-top: -10px;
+	}
+
+	.cards2 {
+		margin-top: 250px;
+	}
+	/* .cards0 {
+		grid-area: 2 / 1 / 7 / 2;
+	}
+
+	.cards6 {
+		grid-area: 1 / 2 / 7 / 3;
+	}
+
+	.cards11 {
+		grid-area: 2 / 3 / 7 / 2;
+	}
+
+	.cards16 {
+		grid-area: 1 / 4 / 7 / 3;
+	} */
+
+	.profile-picture {
+		margin-left: 2.5em;
+		width: 250px;
+		margin-top: 0.5em;
+	}
+
+	h1.naam {
+		margin-top: -3.5em;
+		margin-left: 10px;
+		font-size: 50px;
+	}
+
+	h2 {
+		font-size: 12px;
+	}
+
+	.card-item {
+		margin-bottom: 3em;
+		margin-right: 3em;
+	}
+
+	.inner-card {
+		width: 400px;
+		height: 600px;
+	}
+
+	p {
+		font-size: 24px;
+	}
+
+	/* @media all and (min-width: 700px) {
 			.cards {
 				--rows: 3;
 			}
@@ -223,5 +247,4 @@
 				--rows: 4;
 			}
 		} */
-
 </style>

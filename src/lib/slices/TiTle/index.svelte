@@ -50,7 +50,7 @@
 		</div>
 
 		<div class="cards2">
-			{#each slice.items.slice(14, 20) as item}
+			{#each slice.items.slice(14, 21) as item}
 				<div
 					class="card-item"
 					style="background-color: {item.background_color

@@ -1,38 +1,72 @@
-# create-svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+# Visual Thinking
+<img src='https://github.com/anoukbruinn/your-tribe-for-life-squad-page/assets/112856683/77feee6c-bfc9-4a9b-83de-67cca3183934' width=50%>
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+## 📚 Inhoudsopgave
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+* [Beschrijving](#beschrijving)
+* [Kenmerken](#kenmerken)
+* [Bronnen](#bronnen)
+* [Licentie](#licentie)
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## 🗒️ Beschrijving
+<strong>Squadpage 🖌️:</strong>
 
-## Developing
+<p> Wij gaan een squadpage maken. <br> 
+</p>
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## 💻👨🏻‍💻👨🏼‍💻 Gebruik
 
-```bash
-npm run dev
+Deze website kan je gebruiken om te zien wie er in squad A zitten.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## 👩🏼‍💻👩🏾‍💻👨🏻‍💻👨🏼‍💻 Kenmerken
 
-## Building
+Lijst met gebruikte tools, technieken en communicatie middelen.
+Dit project is gemaakt met Sveltekit, slice machine en prismic.
 
-To create a production version of your app:
+Sveltekit: Dit is een framework. SvelteKit biedt extra mogelijkheden bovenop Svelte, zoals routing, statische site generation (SSG) en server-side rendering (SSR).
 
-```bash
-npm run build
-```
+Prismic: Dit is een headless CMS.
 
-You can preview the production build with `npm run preview`.
+Slice machine: Dit is een content model creator. 
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+<ul>
+<li><strong>TOOLS 🧰:</strong></li>
+<li>VSCode</li>
+<li>Pen & Papier</li>
+<li>Laptop</li>
+</ul>
+
+<ul>
+<li><strong>GEBRUIKTE TECHNIEKEN 🛠️:</strong></li>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+<li>Sveltekit<li>
+<li>SLice machine<li>
+<li>Prismic<li>
+</ul>
+
+<ul>
+<li><strong>COMMUNICATIE MIDDELEN 🗣️:</strong></li>
+<li>Microsoft Teams</li>
+ <li>Whatsapp</li>
+</ul>
+
+
+## 🌐 Bronnen
+
+<ul>
+<li>https://github.com//</li>
+<li>https://www.google.nl/</li>
+</ul>
+
+
+
+## 🔒 Licentie
+
+![GNU GPL V3](https://www.gnu.org/graphics/gplv3-127x51.png)
+
+This work is licensed under [GNU GPLv3](./LICENSE).
